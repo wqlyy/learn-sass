@@ -1,0 +1,11 @@
+{
+  "name": "sasswebsite",
+  "version": "1.0.0",
+  "description": "Sass 官网",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "wq",
+  "license": "ISC"
+}
