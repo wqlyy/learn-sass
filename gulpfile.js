@@ -23,7 +23,12 @@ gulp.task('compass',function(){
 			config_file:'./config.rb',
 			css:'src/stylesheets',
 			sass:'src/sass'
-		})).pipe(gulp.dest('./dist/css/'));
+		}))
+		.on('error',function(err){
+			console.log(err);
+			this.emit('end');
+		})
+		.pipe(gulp.dest('./dist/css/'));
 });
 
 gulp.task('html',function(){
