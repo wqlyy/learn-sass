@@ -3,4 +3,19 @@
 	@include padding-trailer(0.5);
 	background-color: $alert-background-color;
 	color:$alert-color;
+	p{
+		margin:0;
+		@include padding-trailer(0);
+	}
+	a{
+		text-decoration:none;
+		font-weight:600;
+		color:rgb(230,230,230);
+		&:hover,&:focus{
+			text-decoration:underline;
+		}
+	}
+	&.stickers{
+		background:#036;
+	}
 }

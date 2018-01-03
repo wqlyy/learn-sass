@@ -1,0 +1,18 @@
+@function stripes($position,$colors) {
+	$colors:if(type-of($colors) != 'list', compact($colors), $colors);
+	$gradient:compact();
+	$len:length($colors);
+	$width:percentage(1/$len);
+
+	@for $i from 1 through $len{
+		$current-color:nth($colors,$i);
+		$temp:$current-color ($width * ($i - 1)),$current-color ($width * $i);
+		$gradient:join($gradient,$temp,comma);
+	}
+	@return linear-gradient($position,$gradient);
+}
+
+.pop-stripe{
+	height:0.25em;
+	@include background-image(stripes(left,$pop-stripe-colors)); 
+}

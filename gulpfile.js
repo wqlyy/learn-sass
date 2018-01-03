@@ -14,7 +14,7 @@ gulp.task('clean',function(callback){
 });
 
 gulp.task('build',function(callback){
-	return runSequence(['compass','html'],callback);
+	return runSequence(['compass','staticFile'],callback);
 });
 
 gulp.task('compass',function(){
@@ -31,8 +31,11 @@ gulp.task('compass',function(){
 		.pipe(gulp.dest('./dist/css/'));
 });
 
-gulp.task('html',function(){
-	return gulp.src('./src/**/*.html')
+gulp.task('staticFile',function(){
+	return gulp.src([
+		  './src/**/*.html',
+		  './src/images*/**/*.*'
+		])
 	.pipe(gulp.dest('./dist'));
 });
 

@@ -1,3 +1,21 @@
-@import "compass";
-@import "helpers/variables";
-@import "components/alerts";
+/*! Vendor*/
+@import 
+  "compass"
+, "normalize"
+, "susy"
+;
+
+/*! Helpers */
+@import 
+  "helpers/variables"
+;
+/*! Layout */
+@import 
+  "layout/main"
+;
+/*! Components */
+@import 
+  "components/alerts"
+, "components/pop-stripe"
+, "components/banner"
+;

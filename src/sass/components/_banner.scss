@@ -1,0 +1,7 @@
+.banner{
+	margin:0;
+	@include padding-leader(0.5);
+	.site-brand{
+		@include span(3);
+	}
+}
