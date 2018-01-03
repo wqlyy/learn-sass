@@ -3,6 +3,7 @@
   "compass"
 , "normalize"
 , "susy"
+, "breakpoint"
 ;
 
 /*! Base */
@@ -26,4 +27,14 @@
 , "components/page-header"
 , "components/section-bottom"
 , "components/contentinfo"
+;
+
+/*! Pages */
+@import 
+  "pages/pageBase"
+, "pages/index"
+, "pages/install"
+, "pages/guide"
+, "pages/community"
+, "pages/libsass"  
 ;

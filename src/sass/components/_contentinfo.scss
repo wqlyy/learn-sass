@@ -5,6 +5,7 @@
 	ul{
 		display:table;
 		padding:0;
+		width:100%;
 		li{
 			list-style:none;
 			display:table-cell;
@@ -24,14 +25,26 @@
 	}
 	.contentinfo-legal{
 		width:span(6);
+		@extend %mobile-style;
 	}
 	.contentinfo-tools{
 		width:span(4.5);
+		@extend %mobile-style;
 		li{
 			padding-right:24px;
 		}
 	}
 	.contentinfo-social{
+		@extend %mobile-style;
 		width:span(1.5);
+		@include breakpoint($screen-xs){
+			text-align:left;
+		}
+	}
+	%mobile-style{
+		@include breakpoint($screen-xs){
+			display:list-item;
+			width:span(12);
+		}
 	}
 }

@@ -7,6 +7,9 @@
 		margin:0;
 		img{
 			height:96px;
+			@include breakpoint($screen-xs){
+				height:48px;
+			}
 		}
 	}
 
@@ -34,8 +37,36 @@
 				color:#036;
 			}
 		}
+		@include breakpoint($screen-xs){
+			display:none
+		}
+	}
+	.container{
+		position:relative;
 	}
 	.banner-toggle{
 		display:none;
+		position: absolute;
+		top:0;
+		right:16px;
+		button {
+		    width: 48px;
+		    height: 48px;
+		    padding: 0;
+		    box-shadow: none;
+		    border-color: transparent;
+		    background: none;
+		    color: inherit;
+		}
+		.icon-bar{
+			margin:0.375em auto;
+			width:2em;
+			display:block;
+			height:0.125em;
+			background-color: #c69;
+		}
+		@include breakpoint($screen-xs){
+			display:block;
+		}
 	}
 }

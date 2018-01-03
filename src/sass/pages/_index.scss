@@ -1,0 +1,23 @@
+.index{
+	%col6-cell{
+		width:span(6);
+		text-align:left;
+		display:table-cell;
+		vertical-align:middle;
+		@include breakpoint($screen-xs){
+			width:span(12);
+			display:block;
+		}
+	}
+	.hero-image{
+		@extend %col6-cell;
+		@extend %fill-img;
+	}
+	.introduction{
+		@extend %col6-cell;
+		font-size:24px;
+		line-height:36px;
+		color:#699;
+		padding-left:20px;
+	}
+}
