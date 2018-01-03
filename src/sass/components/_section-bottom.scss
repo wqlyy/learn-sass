@@ -1,0 +1,23 @@
+.section-bottom{
+	.list-tiled{
+		padding:0;
+		text-align:left;
+		li{
+			@include span(4);
+			list-style:none;
+			text-align:left;
+		}
+		&>li:nth-child(3n+4){
+			clear:both;
+		}
+		h3{
+			text-transform: uppercase;
+		    color: #808c99;
+		    font-weight:600;
+		    font-size:1em;
+		    line-height: 1.5em;
+		    letter-spacing:.03125em;
+		    font-family: "source-serif-pro",Georgia,"Times New Roman",Times,serif;
+		}
+	}
+}

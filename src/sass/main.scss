@@ -5,6 +5,11 @@
 , "susy"
 ;
 
+/*! Base */
+@import 
+  "base/font"
+;
+
 /*! Helpers */
 @import 
   "helpers/variables"
@@ -18,4 +23,7 @@
   "components/alerts"
 , "components/pop-stripe"
 , "components/banner"
+, "components/page-header"
+, "components/section-bottom"
+, "components/contentinfo"
 ;

@@ -1,0 +1,37 @@
+.contentinfo{
+	font-size:12px;
+	text-align:left;
+	color:#808c99;
+	ul{
+		display:table;
+		padding:0;
+		li{
+			list-style:none;
+			display:table-cell;
+			vertical-align:middle;
+		}
+	}
+	p{
+		padding-bottom:4.5px;
+		margin:0;
+	}
+	a{
+		color:#484c55;
+		text-decoration:none;
+		&:visited{
+			color:#b37399;
+		}
+	}
+	.contentinfo-legal{
+		width:span(6);
+	}
+	.contentinfo-tools{
+		width:span(4.5);
+		li{
+			padding-right:24px;
+		}
+	}
+	.contentinfo-social{
+		width:span(1.5);
+	}
+}

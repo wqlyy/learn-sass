@@ -3,5 +3,39 @@
 	@include padding-leader(0.5);
 	.site-brand{
 		@include span(3);
+		text-align:left;
+		margin:0;
+		img{
+			height:96px;
+		}
+	}
+
+	.navigation{
+		@include span(9);
+		text-align:right;
+
+		ul{
+			li{
+				list-style:none;
+				display:inline-block; 
+				line-height:96px;
+			}
+		}
+		a{
+			padding:0.75em 1em;
+			color:#c69;
+			text-transform:uppercase;
+			text-decoration:none;
+			font-weight:600;
+			&:visited{
+				color:#b37399;
+			}
+			&:hover,&:focus{
+				color:#036;
+			}
+		}
+	}
+	.banner-toggle{
+		display:none;
 	}
 }
